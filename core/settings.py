@@ -15,6 +15,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    #css framework
+    'foundation',
+    
+    #template creator
     'creator',
 )
 
