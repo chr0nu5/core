@@ -32,11 +32,26 @@ header {
         font-size:20px;
     }
 }
-//set the max width of the page to fullscreen
-//.row {
-//    width: 100%;
-//    max-width: 100%;
-//}
+
+.row .columns table {
+    width: 100%;
+    
+    td{
+        
+        ul{
+            
+            li{
+                
+                .button{
+                    margin-bottom:0px;
+                }
+            }
+        }
+    }
+    td:last-child{
+        width:155px;
+    }
+}
 
 //vertical menu 100% width
 .icon-bar.vertical {
