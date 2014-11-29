@@ -55,3 +55,4 @@ target/
 
 #Core
 .sass-cache
+db.sqlite3
