@@ -1,0 +1,59 @@
+{% load staticfiles %}<!doctype html>
+<html class="no-js" lang="en">
+     <head>
+           <meta charset="utf-8" />
+           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+           <title>{% block title %}CoreCreator{% endblock %}</title>
+           <link rel="stylesheet" href="{% static 'foundation/css/foundation.css' %}" />
+           <link rel="stylesheet" href="{% static 'foundation/css/foundation-icons.css' %}" />
+           <link rel="stylesheet" href="{% static 'creator/css/creator.css' %}" />
+           {% block css %}{% endblock %}
+           <script src="{% static 'foundation/js/vendor/modernizr.js' %}"></script>
+     </head>
+     <body>
+           <nav role="navigation" data-topbar="" class="top-bar">
+                <ul class="title-area">
+                     <li class="name"><h1><a href="/creator/">{% block page_title %}CoreCreator{% endblock %}</a></h1></li>
+                     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                </ul>
+                <section class="top-bar-section">
+                     <ul class="right">
+                           <li class="has-form">
+                                <a class="button" href="/creator/templates/">Templates</a>
+                           </li>
+                           <li class="divider"></li>
+                           <li class="has-form">
+                                <a class="button" href="/creator/elements/">Elements</a>
+                           </li>
+                           <li class="divider"></li>
+                           <li class="has-form">
+                                <a class="button" href="/creator/widgets/">Widgets</a>
+                           </li>
+                           <li class="divider"></li>
+                           <li class="active"><a href="/core/" target="_blank">Admin</a></li>
+                     </ul>
+                </section>
+           </nav>
+           <header class="blue">
+                <div class="row">
+                     <div class="large-12 columns">
+                           {% block page_header %}<h1>Dashboard</h1>{% endblock %}
+                     </div>
+                </div>
+           </header>
+           <div class="row">
+                <div class="large-12 columns">&nbsp;</div>
+           </div>
+           <div class="row">
+                <div class="large-12 columns white">
+                     {% block content %}{% endblock %}
+                </div>
+           </div>
+           <script src="{% static 'foundation/js/vendor/jquery.js' %}"></script>
+           <script src="{% static 'foundation/js/foundation.min.js' %}"></script>
+           <script>
+                $(document).foundation();
+           </script>
+           {% block js %}{% endblock %}
+     </body>
+</html>
