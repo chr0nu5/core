@@ -56,3 +56,6 @@ target/
 #Core
 .sass-cache
 db.sqlite3
+
+#Mac
+.DS_Store
