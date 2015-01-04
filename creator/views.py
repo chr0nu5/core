@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
 # Create your views here.
-def index(request):
-    return render(request, 'creator/base_admin.html',{})
+def dashboard(request):
+    #return render(request, 'metronic/base_admin.html',{})
+    return render(request, 'creator/dashboard.html',{})

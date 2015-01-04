@@ -8,7 +8,7 @@ TEMPLATE_DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
-    #'django.contrib.admin',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -19,6 +19,9 @@ INSTALLED_APPS = (
     'metronic',
     
     #template creator
+    'fusion',
+    
+    #admin manager
     'creator',
 )
 
