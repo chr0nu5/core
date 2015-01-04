@@ -1,0 +1,219 @@
+/* =============================================
+ * Team Member
+ * 
+ * @type WebRock Object
+ * ============================================= */
+@import '../../scss/theme/mixins';
+@import '../../scss/theme/variables';
+
+$brand-default: $white;
+$brand-inverse: $gray-dark;
+
+.team-member{
+    border-bottom: 5px solid transparent;
+
+    @include border-radius($border-radius-base);
+
+    &:hover{
+        .team-member-name{
+            color: $brand-primary;
+        }
+    }
+    
+    .team-member-img-wrapper{
+        text-align: center;
+        img{
+            margin:0px auto
+        }
+    }
+
+
+    &.team-member-2{
+        .team-member-name{
+            margin: 0;
+        }
+        .team-member-img-wrapper{
+            padding: 20px;
+            img{
+                @include border-radius(100%);
+            }
+        }
+    }
+
+
+    &.team-member-3{
+        .team-member-name{
+            margin: 0;
+        }
+        .team-member-img-wrapper{
+            padding: 35px 35px 0;
+            max-width: 300px;
+            margin: 0 auto -80px;
+            text-align: center;
+            img{
+                margin: 0 auto;
+                @include border-radius(100%);
+            }
+        }
+
+        .team-member-details{
+            padding-top: 100px;
+        }
+
+
+        &.team-member-transparent{
+            background: transparent;
+            &:hover{
+                background: transparent;
+            }
+            .team-member-details{
+                background: transparent;
+                &:hover{
+                    background: rgba(255,255,255,0.5);
+                }
+            }
+        }
+        &.team-member-default{
+            background: transparent;
+            .team-member-details{
+                background: $brand-default;
+                &:hover{
+                    background: $brand-default;
+                }
+            }
+        }
+        &.team-member-inverse{
+            background: transparent;
+            .team-member-details{
+                background: $gray-dark;
+                &:hover{
+                    background: $gray-dark;
+                }
+            }
+
+        }
+    }
+
+
+
+    /* Details
+    ************************/
+    .team-member-details{
+        padding:10px;
+        @include transition(all, 0.5s, ease);
+
+        /* Name
+        ************************/
+        .team-member-name{
+            margin-bottom: 0;
+            font-size: 18px;
+            @include transition(all, 0.5s, ease);
+        }
+
+        /* Profession
+        ************************/
+        .team-member-profession{
+            font-size: 14px;
+            color: $gray-light;
+            @include transition(all, 0.5s, ease);
+        }
+
+        /* Description
+        ************************/
+        .team-member-description{
+            @include transition(all, 0.5s, ease);
+        }
+    }
+     @include transition(all, 0.5s, ease);
+
+    &:hover{
+        .team-member-name{
+            color: $brand-primary;
+        }
+    }
+
+    &.team-member-transparent{
+        background: transparent;
+        &:hover{
+            .team-member-name{
+                color: $brand-primary;
+            }
+        }
+
+        &:hover{
+            background: rgba(255,255,255,0.5);
+            border-bottom: 5px solid $brand-primary;
+        }
+    }
+    &.team-member-default{
+        background: $white;
+        &:hover{
+            .team-member-name{
+                color: $brand-primary;
+            }
+        }
+        .team-member-name{
+            color: $gray-dark;
+        }
+        .team-member-profession{
+            color: $gray-light;
+        }
+        .team-member-description{
+            color:$gray;
+        }
+        &:hover{
+            border-bottom: 5px solid $brand-primary;
+        }
+    }
+    &.team-member-inverse{
+        background: $gray-dark;
+        &:hover{
+            .team-member-name{
+                color: $brand-primary;
+            }
+        }
+        .team-member-name{
+            color: $white;
+        }
+        .team-member-profession{
+            color: $gray;
+        }
+        .team-member-description{
+            color: $gray-light;
+        }
+        &:hover{
+            border-bottom: 5px solid $brand-primary;
+        }
+    }
+
+}
+
+.about-single{
+    @media screen and (max-width: $screen-md-max) and (min-width: $screen-md-min){
+        padding-left: 20px;
+    }
+}
+
+/* Social
+************************/
+.team-member-social{
+    margin-top:10px;
+    li a{
+        @include border-radius($border-radius-small);
+        width: 30px;
+        height: 30px;
+        line-height:30px;
+        text-align:center;
+        display: block;
+        margin-bottom: 10px;
+        @include transition(all, 0.5s, ease);
+        &:hover{
+            color: $gray-dark;
+            background: $brand-primary;
+        }
+        i{
+            line-height:30px;
+        }
+    }
+}
+

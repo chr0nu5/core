@@ -1,0 +1,146 @@
+/* =============================================
+ * Pricing Table
+ * 
+ * @type WebRock Object
+ * ============================================= */
+@import '../../scss/theme/variables';
+@import '../../scss/theme/mixins';
+
+.pricing-table{
+    margin-bottom: 20px;
+
+    .panel{
+        .panel-heading{
+            padding: 20px;
+        }
+
+        border: 1px solid transparent;
+        @include transition(all, 0.3s, ease);
+    }
+
+    &:hover{
+        .panel{
+            border: 1px solid $brand-primary;
+        }
+        .pricing-table-price h1{
+            color: $brand-primary;
+        }
+        .pricing-table-title{
+            color: $brand-primary;
+        }
+    }
+
+    /* Title
+    ************************/
+    .pricing-table-title{
+        @include transition(all, 0.3s, ease);
+        margin: 20px 0;
+    }
+
+    /* Price
+    ************************/
+    .pricing-table-price{        
+        h1{
+            margin:0;
+            font-size: 48px;
+            color: $brand-primary;
+            z-index: 3;
+            @include transition(all, 0.3s, ease-in-out);
+        }
+        p{
+            margin:0;
+            color: $gray;
+        }
+    }    
+
+    /* List Items
+    ************************/
+    .list-group{
+        @media screen and (max-width: $screen-xs-max){
+            padding-top: 0px;
+        }
+        .list-group-item{
+            @include transition(all, 0.3s, ease);
+        }
+    }
+
+    /* Footer
+    ************************/
+    .pricing-table-footer{
+        padding: 0px;
+        .btn{
+            @include box-shadow(0,0,0,transparent);
+        }
+    }
+
+    /* Panel Primary Price Color
+    ************************/
+    .panel{
+        margin:0;
+        padding: 0;
+    }
+    .panel-primary{
+        .pricing-table-price{
+            h1{
+                color: $brand-primary;
+            }
+            p{
+                color: $gray;
+            }
+        } 
+    }
+}
+
+
+/***********************************
+              Theming
+************************************/
+$brand-default : $white;
+$brand-inverse : $gray-dark;
+
+.pricing-table-default{
+    .panel-heading{
+        background: $brand-default;
+        &:after{
+            border-top-color: $brand-default;
+        }
+    }
+    .list-group{
+        background: $brand-default;
+        .list-group-item{
+            background: $brand-default;
+            &:hover{
+                background: $gray-lighter;
+            }
+        }
+    }
+}
+
+.pricing-table-inverse{
+    .panel-heading{
+        background: $brand-inverse;
+        &:after{
+            border-top-color: $brand-inverse;
+        }
+    }
+
+    .pricing-table-title{
+        color: $brand-default;
+    }
+
+    .pricing-table-price{        
+        p{
+            color: $gray-light;
+        }
+    }   
+
+    .list-group{
+        background: $brand-default;
+        .list-group-item{
+            background: $brand-default;
+            &:hover{
+                background: $gray-lighter;
+            }
+        }
+    }
+}

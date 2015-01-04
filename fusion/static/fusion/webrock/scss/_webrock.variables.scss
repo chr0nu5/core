@@ -1,0 +1,59 @@
+/* =============================================
+ * Bootstrap Variables
+* ============================================= */
+// Font Size
+$font-size-base:          12px;
+$font-family-sans-serif:  "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Grays
+$gray-darker:              #111; 
+$gray-dark:              #2a282d;  
+$gray:                   #403f45; 
+$gray-light:             #797577;
+$gray-lighter:           #d1caca;
+$gray-extralight:        whitesmoke;
+
+// Brand Colors
+$brand-primary:         #ed4749;
+$brand-success:         #13bf70;
+$brand-info:            #47a5ed;
+$brand-warning:         #eda547;
+$brand-danger:          #f22d23;
+
+// Body Background
+$body-bg: #fdfdfd;
+
+// White text
+$text-white: #fdfdfd;
+
+// Block Background
+$bg-gray-light: $gray-light; 
+$bg-gray-dark: $gray-dark;
+
+@import "../../scss/theme/variables";
+
+/* =============================================
+ * WebRock Variables
+* ============================================= */
+
+
+$webrock-primary: $brand-primary;
+
+$webrock-dark-bg: #2a282d;
+$webrock-dark-title: #fdfdfd;
+$webrock-dark-subtitle: #d1caca;
+
+$webrock-light-bg: #fdfdfd;
+$webrock-light-title: #29282f;
+$webrock-light-subtitle: #585858;
+
+$webrock-input-bg: $gray-extralight;
+
+$webrock-border-color: $gray-extralight;
+$webrock-side-border-color: $gray-darker;
+
+$webrock-width-md: 350px;
+$webrock-padding-md: 20px;
+
+$webrock-activity-size: 100px;
+

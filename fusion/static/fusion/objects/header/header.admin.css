@@ -1,0 +1,9 @@
+/* =============================================
+ * Header 
+ * 
+ * @type WebRock Object
+ * ============================================= */
+[data-shortcode="header-1"]{
+    position: relative;
+    display: block;
+}

@@ -1,0 +1,12 @@
+/* =============================================
+ * Image Background 
+ * 
+ * @type WebRock Object
+ * ============================================= */
+.solidbackground {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0; }
+
+/*# sourceMappingURL=solidbackground.css.map */

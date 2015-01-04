@@ -1,0 +1,42 @@
+{% extends 'metronic/form.html' %}
+{% block breadcumb %}<h1>Templates</h1>{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="fa fa-cogs font-green-sharp"></i>
+                    <span class="caption-subject font-green-sharp bold uppercase">Add Template</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form action="/fusion/template/save/" method="post" id="form_sample_1" class="form-horizontal">
+                    {% csrf_token %}
+                    <div class="form-body">
+                        <div class="alert alert-danger display-hide">
+                            <button class="close" data-close="alert"></button>
+                            You have some form errors. Please check below.
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3">Name<span class="required">
+                            * </span>
+                            </label>
+                            <div class="col-md-4">
+                                <input type="text" name="name" data-required="1" class="form-control"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn green">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

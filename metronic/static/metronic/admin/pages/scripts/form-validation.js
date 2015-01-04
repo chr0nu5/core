@@ -80,8 +80,9 @@ var FormValidation = function () {
                 },
 
                 submitHandler: function (form) {
-                    success1.show();
-                    error1.hide();
+                    form.submit();
+                    //success1.show();
+                    //error1.hide();
                 }
             });
 

@@ -31,23 +31,21 @@
                             <input type="checkbox" class="group-checkable" data-set="#sample_3 .checkboxes"/>
                         </th>
                         <th>Name</th>
-                        <th>Tags</th>
                         <th width="1%"></th>
                     </tr>
                 </thead>
                 <tbody>
+                    {% for template in templates %}
                     <tr class="odd gradeX">
                         <td>
                             <input type="checkbox" class="checkboxes" value="1"/>
                         </td>
-                        <td>shuxer</td>
+                        <td>{{template.name}}</td>
                         <td>
-                            <a href="#">Home</a>, <a href="#">Listing</a>, <a href="#">Post</a>, <a href="#">Page</a>
-                        </td>
-                        <td>
-                            <a target="_blank" href="/fusion/builder/2" class="label label-sm label-danger">FUSIONbuilder</a>
+                            <a href="/fusion/builder/{{template.pk}}/" class="label label-sm label-danger">FUSIONbuilder</a>
                         </td>
                     </tr>
+                    {% endfor %}
                 </tbody>
             </table>
         </div>

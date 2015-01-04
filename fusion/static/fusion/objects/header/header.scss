@@ -1,0 +1,99 @@
+/* =============================================
+ * Header 
+ * 
+ * @type WebRock Object
+ * ============================================= */
+@import '../../scss/theme/variables';
+
+.header{
+    width: 100%;
+    display: block;
+    position: relative;
+    margin:0;
+
+    &.header-default{
+        h1, h2, h3, h4, h5, h6{
+            color: $gray-dark;
+        }
+        p{
+            color: $gray;
+        }
+    }    
+    &.header-inverse{
+        h1, h2, h3, h4, h5, h6{
+            color: $white;
+        }
+        p{
+            color: $gray-lighter;
+        }
+    }
+
+    $header-xlg: $padding-class * 10;
+    $header-lg: $padding-class * 8;
+    $header-md: $padding-class * 6;
+    $header-sm: $padding-class * 4;
+    $header-xs: $padding-class * 2;
+
+    &.header-xlg{
+        padding: $header-xlg 0;
+        @media screen and (max-width: $screen-md-max){
+            padding: $header-xlg*5/6 0;
+        }
+        @media screen and (max-width: $screen-sm-max){
+            padding: $header-xlg*4/6 0;
+        }
+        @media screen and (max-width: $screen-xs-max){
+            padding: $header-xlg*3/6 0;
+        }
+    }
+    &.header-lg{
+        padding: $header-lg 0;
+        @media screen and (max-width: $screen-md-max){
+            padding: $header-lg*5/6 0;
+        }
+        @media screen and (max-width: $screen-sm-max){
+            padding: $header-lg*4/6 0;
+        }
+        @media screen and (max-width: $screen-xs-max){
+            padding: $header-lg*3/6 0;
+        }
+    }
+    &.header-md{
+        padding: $header-md 0;
+        @media screen and (max-width: $screen-md-max){
+            padding: $header-md*5/6 0;
+        }
+        @media screen and (max-width: $screen-sm-max){
+            padding: $header-md*4/6 0;
+        }
+        @media screen and (max-width: $screen-xs-max){
+            padding: $header-md*3/6 0;
+        }
+    }
+    &.header-sm{
+        padding: $header-sm 0;
+        @media screen and (max-width: $screen-md-max){
+            padding: $header-sm*5/6 0;
+        }
+        @media screen and (max-width: $screen-sm-max){
+            padding: $header-sm*4/6 0;
+        }
+        @media screen and (max-width: $screen-xs-max){
+            padding: $header-sm*3/6 0;
+        }
+    }
+    &.header-xs{
+        padding: $header-xs 0;
+        @media screen and (max-width: $screen-md-max){
+            padding: $header-xs*5/6 0;
+        }
+        @media screen and (max-width: $screen-sm-max){
+            padding: $header-xs*4/6 0;
+        }
+        @media screen and (max-width: $screen-xs-max){
+            padding: $header-xs*3/6 0;
+        }
+    }
+
+
+}
