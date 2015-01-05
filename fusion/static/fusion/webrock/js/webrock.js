@@ -1115,7 +1115,7 @@ function WebRock() {
 
         $.ajax({
             type: 'POST',
-            url: 'builder/includes/inc.edit.savepage.php',
+            url: '/fusion/builder/save/',
             data: data,
             beforeSend: function () {
                 $('.webrock-activity-save i').removeClass('fa-save');
