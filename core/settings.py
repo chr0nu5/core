@@ -14,16 +14,19 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
     #css framework
     'metronic',
-    
     #template creator
     'fusion',
-    
     #admin manager
     'creator',
 )
+
+#dynamic widgets
+WIDGETS_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
+for item in os.listdir(WIDGETS_DIR):
+    if item.startswith('widget_') and item not in INSTALLED_APPS:
+        INSTALLED_APPS += (item, )
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',

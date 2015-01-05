@@ -346,7 +346,7 @@ function WebRock() {
         // 
         // get result based on shortcode, atts and content
         $.ajax({
-            url: "webrock/webrock.ajax.php",
+            url: "/fusion/widget_"+shortcode.replace('-','_')+"/get_widget/",
             type: "POST",
             data: data,
             cache: false,

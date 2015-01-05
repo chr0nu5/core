@@ -11,4 +11,5 @@ urlpatterns = patterns('',
     
     #builder
     url(r'^builder/(?P<page>\d+)/$', views.builder),
+    url(r'^builder/get_widget/$', views.builder_get_widget),
 )

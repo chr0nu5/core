@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
+from django.views.decorators.csrf import csrf_exempt
 from fusion.models import Template
+from fusion.widgets import ResponsiveGrid
 
 #menus
 def menus(request):
@@ -24,3 +26,14 @@ def template_save(request):
 def builder(request, page):
     template = Template.objects.get(pk=page)
     return render(request, 'fusion/builder.html',{'template':template})
+
+@csrf_exempt
+def builder_get_widget(request):
+    shortcode = 'widget_' + request.POST.get('shortcode').replace('-','_')
+    
+    #work the magic
+    from pydoc import locate
+    widget = locate(shortcode + '.widget.Widget')
+    widget = widget()
+    
+    return HttpResponse(widget.create())
