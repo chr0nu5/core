@@ -2,7 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from django.views.decorators.csrf import csrf_exempt
 from fusion.models import Template
-from fusion.widgets import ResponsiveGrid
 from django.conf import settings
 from pydoc import locate
 
