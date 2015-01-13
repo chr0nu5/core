@@ -1,0 +1,3 @@
+[submodule "metronic"]
+	path = metronic
+	url = https://chr0nu5@bitbucket.org/chr0nu5/metronic.git
