@@ -13,19 +13,19 @@
  * Class Dependencies
  * ============================================= */
 /* ===
- * WebRock Hooks
+ * FusionCORE Hooks
  * === */
 require_once $webrock_folder . 'webrock.hooks.php';
 /* ===
- * WebRock
+ * FusionCORE
  * === */
 require_once $webrock_folder . 'webrock.php';
 /* ===
- * WebRock Input Interface
+ * FusionCORE Input Interface
  * === */
 require_once $webrock_folder . 'webrock.input.php';
 /* ===
- * WebRock Object Interface
+ * FusionCORE Object Interface
  * === */
 require_once $webrock_folder . 'webrock.object.php';
 

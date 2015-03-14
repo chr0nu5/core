@@ -1,7 +1,7 @@
 <?php
 
 /* =============================================
- * WebRockInput Class
+ * FusionCOREInput Class
  * 
  * @type global
  * @role object handling interface

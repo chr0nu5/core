@@ -1,5 +1,5 @@
 /* =============================================
- * WebRock
+ * FusionCORE
  *
  * @file {plugins.js} 
  * @role main plugin functionality dependencies

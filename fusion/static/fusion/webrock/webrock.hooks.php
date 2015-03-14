@@ -1,7 +1,7 @@
 <?php
 
 /* =============================================
- * WebRock Hooks
+ * FusionCORE Hooks
  * 
  * Attach (or remove) multiple callbacks to an event and trigger those callbacks when that event is called.
  *

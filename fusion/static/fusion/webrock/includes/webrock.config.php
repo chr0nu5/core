@@ -29,7 +29,7 @@
     define('WEBROCK_VERSION', '1.0.0');
 
     /* ===
-    * WebRock Slug
+    * FusionCORE Slug
     * 
     * @since 1.0.0
     * @used identifier

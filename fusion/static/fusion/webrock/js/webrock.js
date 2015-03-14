@@ -1,5 +1,5 @@
 /* =============================================
- * WebRock
+ * FusionCORE
  *
  * @file {js} 
  * @role main plugin functionality
@@ -14,28 +14,28 @@ function WebRock() {
     var self = this;
 
     /* ===
-     * WebRock 
+     * FusionCORE 
      * 
      * @role main framework container
      * === */
     var $webrock = $('.webrock');
 
     /* ===
-     * WebRock Sandbox
+     * FusionCORE Sandbox
      * 
      * @role main elements container
      * === */
     var $sandbox = $('.webrock-sandbox');
 
     /* ===
-     * WebRock Activities 
+     * FusionCORE Activities 
      * 
      * @role trigger main functionality
      * === */
     var $activities = $('.webrock-activities');
 
     /* ===
-     * WebRock Pages
+     * FusionCORE Pages
      * 
      * @role main framework content blocks
      * === */
@@ -45,21 +45,21 @@ function WebRock() {
     var $settingsPage = $('#webrock-settings-page');
 
     /* ===
-     * WebRock Current Page
+     * FusionCORE Current Page
      * 
      * @role remember current page for reopening or closing
      * === */
     var currentPage = null;
 
     /* ===
-     * WebRock Context Menu
+     * FusionCORE Context Menu
      * 
      * @role enable or disable right click context menu
      * === */
     var enableContextMenu = true;
 
     /* ===
-     * WebRock confirmDelete
+     * FusionCORE confirmDelete
      * 
      * @role determines whether the delete action 
      *       requires a confirmation from the user
@@ -67,14 +67,14 @@ function WebRock() {
     var confirmDelete = true;
 
     /* ===
-     * WebRock Activities 
+     * FusionCORE Activities 
      * 
      * @role trigger main functionality
      * === */
     var saveData = {};
 
     /* ===
-     * WebRock Initial List Filter
+     * FusionCORE Initial List Filter
      * 
      * @role disable unnecessary items in the add list
      * === */
@@ -82,7 +82,7 @@ function WebRock() {
     var initListFilter = '';
 
     /* ===
-     * WebRock Search Items
+     * FusionCORE Search Items
      * 
      * @role search for items inside the 
      *       WebRock object list
@@ -105,49 +105,49 @@ function WebRock() {
     }
 
     /* ===
-     * WebRock getValue
+     * FusionCORE getValue
      * 
      * @role array of getValue functions
      * === */
     var webrockScript = {};
 
     /* ===
-     * WebRock getValue
+     * FusionCORE getValue
      * 
      * @role array of getValue functions
      * === */
     var getValue = {};
 
     /* ===
-     * WebRock setValue
+     * FusionCORE setValue
      * 
      * @role array of setValue functions
      * === */
     var setValue = {};
 
     /* ===
-     * WebRock initInput
+     * FusionCORE initInput
      * 
      * @role array of initInput functions
      * === */
     var initInput = {};
 
     /* ===
-     * WebRock objectInit
+     * FusionCORE objectInit
      * 
      * @role array of init functions
      * === */
     var objectInit = {};
 
     /* ===
-     * WebRock objectRun
+     * FusionCORE objectRun
      * 
      * @role array of run functions
      * === */
     var objectRun = {};
 
     /* ===
-     * WebRock beforeEdit
+     * FusionCORE beforeEdit
      * 
      * @role save initial object state
      *       for recovery on cancel
@@ -155,7 +155,7 @@ function WebRock() {
     var beforeEdit = null;
 
     /* ===
-     * WebRock scssVariables
+     * FusionCORE scssVariables
      * 
      * @role store scss variables used for 
      *       the theme editor
@@ -163,7 +163,7 @@ function WebRock() {
     var scssVariables = {};
 
     /* ===
-     * WebRock Target
+     * FusionCORE Target
      * 
      * @role designates target object
      *       add: inserts into target content

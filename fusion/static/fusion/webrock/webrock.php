@@ -1,7 +1,7 @@
 <?php
 
 /* =============================================
- * WebRock Class
+ * FusionCORE Class
  * 
  * @type global
  * @role file handling and content generator
@@ -10,7 +10,7 @@
 class WebRock
 {
     /* ===
-     * WebRock Plugin Unique Instance
+     * FusionCORE Plugin Unique Instance
      * 
      * @since 1.0.0
      * @var {object}
@@ -20,7 +20,7 @@ class WebRock
 
 
     /* ===
-     * WebRock Inputs
+     * FusionCORE Inputs
      * 
      * @since 1.0.0
      * @var {object array}
@@ -28,7 +28,7 @@ class WebRock
     protected static $inputs = array();
 
     /* ===
-     * WebRock Objects
+     * FusionCORE Objects
      * 
      * @since 1.0.0
      * @var {object array}
@@ -36,7 +36,7 @@ class WebRock
     protected static $objects = array();
 
     /* ===
-     * WebRock Styles and Scripts
+     * FusionCORE Styles and Scripts
      * 
      * @since 1.0.0
      * @var {object array}
@@ -52,7 +52,7 @@ class WebRock
 
 
     /* ===
-     * WebRock Settings
+     * FusionCORE Settings
      * 
      * @since 1.0.0
      * @var {object}
@@ -61,7 +61,7 @@ class WebRock
     protected static $settings = null;
 
     /* ===
-     * WebRock Order Sorting
+     * FusionCORE Order Sorting
      * 
      * @since 1.0.0
      * @var {object}
@@ -70,7 +70,7 @@ class WebRock
     protected static $objectOrder = 'ASC';
 
     /* ===
-     * WebRock Get Instance
+     * FusionCORE Get Instance
      * 
      * @role returns an already created instance or 
      *       creates a new instance at runtime
@@ -91,7 +91,7 @@ class WebRock
 
 
     /* ===
-     * WebRock Constructor
+     * FusionCORE Constructor
      * 
      * @role adds all the object config and function files
      *       adds all the input files
@@ -408,7 +408,7 @@ class WebRock
 
         <!-- 
         * ===
-        * WebRock Activities
+        * FusionCORE Activities
         *
         * @role activate one of the WebRock Activities
         * ===
@@ -476,7 +476,7 @@ class WebRock
 
         <!-- 
         * ===
-        * WebRock Framework
+        * FusionCORE Framework
         *
         * @role contains the main webrock activity pages
         * ===
@@ -490,14 +490,14 @@ class WebRock
 
         <!--
         * ===
-        * WebRock Page
+        * FusionCORE Page
         * ===
         -->
         <div class="webrock-page" id="webrock-list-page">
             <div class="webrock-page-content">
                 <!--
                 * ===
-                * WebRock Heading
+                * FusionCORE Heading
                 * ===
                 -->
                 <div class="webrock-heading webrock-dark">
@@ -512,7 +512,7 @@ class WebRock
 
                 <!--
                 * ===
-                * WebRock Category Filter
+                * FusionCORE Category Filter
                 * ===
                 -->
                 <input class="webrock-list-search"
@@ -520,7 +520,7 @@ class WebRock
 
                 <!--
                 * ===
-                * WebRock Body
+                * FusionCORE Body
                 * ===
                 -->
                 <div class="webrock-body webrock-light">
@@ -550,7 +550,7 @@ class WebRock
             </div>
             <!--
             * ===
-            * WebRock Footer
+            * FusionCORE Footer
             * ===
             -->
             <div class="webrock-footer webrock-dark">
@@ -560,14 +560,14 @@ class WebRock
 
         <!--
         * ===
-        * WebRock Page
+        * FusionCORE Page
         * ===
         -->
         <div class="webrock-page" id="webrock-add-page">
             <div class="webrock-page-content">
                 <!--
                 * ===
-                * WebRock Heading
+                * FusionCORE Heading
                 * ===
                 -->
                 <div class="webrock-heading webrock-dark">
@@ -581,7 +581,7 @@ class WebRock
 
                 <!--
                 * ===
-                * WebRock Category Filter
+                * FusionCORE Category Filter
                 * ===
                 -->
                 <select class="webrock-input-categories webrock-select">
@@ -590,7 +590,7 @@ class WebRock
 
                 <!--
                 * ===
-                * WebRock Body
+                * FusionCORE Body
                 * ===
                 -->
                 <div class="webrock-body webrock-light">
@@ -598,7 +598,7 @@ class WebRock
             </div>
             <!--
             * ===
-            * WebRock Footer
+            * FusionCORE Footer
             * ===
             -->
             <div class="webrock-footer webrock-dark">
@@ -622,7 +622,7 @@ class WebRock
             ?>
             <!--
             * ===
-            * WebRock Page
+            * FusionCORE Page
             * ===
             -->
             <div class="webrock-page"
@@ -637,7 +637,7 @@ class WebRock
                 <div class="webrock-page-content">
                     <!--
                     * ===
-                    * WebRock Heading
+                    * FusionCORE Heading
                     * ===
                     -->
                     <div class="webrock-heading webrock-dark">
@@ -652,7 +652,7 @@ class WebRock
 
                     <!--
                     * ===
-                    * WebRock Category Filter
+                    * FusionCORE Category Filter
                     * ===
                     -->
                     <?php
@@ -672,7 +672,7 @@ class WebRock
 
                     <!--
                     * ===
-                    * WebRock Body
+                    * FusionCORE Body
                     * ===
                     -->
                     <div class="webrock-body webrock-light">

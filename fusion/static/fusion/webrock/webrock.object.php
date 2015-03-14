@@ -1,7 +1,7 @@
 <?php
 
 /* =============================================
- * WebRockObject Class
+ * FusionCOREObject Class
  * 
  * @type global
  * @role object handling interface

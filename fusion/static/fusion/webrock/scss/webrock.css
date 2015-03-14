@@ -1,11 +1,11 @@
 /* =============================================
- * WebRock Dependencies
+ * FusionCORE Dependencies
  * ============================================= */
 /* =============================================
  * Bootstrap Variables
 * ============================================= */
 /* =============================================
- * WebRock Variables
+ * FusionCORE Variables
 * ============================================= */
 /* =============================================
  * General Styles
@@ -274,7 +274,7 @@ a {
   padding-left: 100px; }
 
 /* =============================================
- * WebRock Activities
+ * FusionCORE Activities
  *
  * @file {sass} 
  * @role main plugin layout and transitions
@@ -355,7 +355,7 @@ a {
     right: 0; }
 
 /* =============================================
- * WebRock
+ * FusionCORE
  *
  * @file {sass} 
  * @role main plugin layout and transitions
@@ -401,17 +401,17 @@ a {
    *       WebRock container section
    * === */
   /* ===
-   * WebRock Toggle Fullscreen
+   * FusionCORE Toggle Fullscreen
    *
    * @role main container building blocks
    * === */
   /* ===
-   * WebRock Pages
+   * FusionCORE Pages
    *
    * @role main container building blocks
    * === */
   /* ===
-  * WebRock Footer
+  * FusionCORE Footer
   * === */ }
   .webrock.webrock-visible {
     -webkit-transform: translateX(-100px);
@@ -489,19 +489,19 @@ a {
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     /* ===
-     * WebRock Heading
+     * FusionCORE Heading
      *
      * @role static heading positioned at
      *       the top of the container
      * === */
     /* ===
-     * WebRock Search 
+     * FusionCORE Search 
      * === */
     /* ===
-    * WebRock Select 
+    * FusionCORE Select 
     * === */
     /* ===
-     * WebRock Body
+     * FusionCORE Body
      * === */ }
     .webrock .webrock-page.webrock-page-visible {
       z-index: 998;
@@ -595,12 +595,12 @@ a {
       position: relative;
       padding-bottom: 50px;
       /* ===
-       * WebRock List
+       * FusionCORE List
        *
        * @role display all WebRock objects to be added
        * === */
       /* ===
-      * WebRock Inputs
+      * FusionCORE Inputs
       *
       * @role display all WebRock objects to be added
       * === */ }
@@ -638,62 +638,62 @@ a {
         border-top: 1px solid #ffffff;
         border-bottom: 1px solid gainsboro;
         /* ===
-        * WebRock Field Details
+        * FusionCORE Field Details
         *
         * @role field title and description
         * === */
         /* ===
-        * WebRock Input, Textarea
+        * FusionCORE Input, Textarea
         *
         * @role default inputs
         * === */
         /* ===
-         * WebRock Navbar Builder
+         * FusionCORE Navbar Builder
          *
          * @role default inputs
          * === */
         /* ===
-        * WebRock Select
+        * FusionCORE Select
         *
         * @role default inputs
         * === */
         /* ===
-        * WebRock Margin
+        * FusionCORE Margin
         *
         * @role default inputs
         * === */
         /* ===
-        * WebRock Padding
+        * FusionCORE Padding
         *
         * @role default inputs
         * === */
         /* ===
-        * WebRock Row
+        * FusionCORE Row
         *
         * @role default inputs
         * === */
         /* ===
-        * WebRock Key Value
+        * FusionCORE Key Value
         *
         * @role default inputs
         * === */
         /* ===
-        * WebRock Button
+        * FusionCORE Button
         *
         * @role default inputs
         * === */
         /* ===
-        * WebRock Text Repeater
+        * FusionCORE Text Repeater
         *
         * @role default inputs
         * === */
         /* ===
-        * WebRock Icons
+        * FusionCORE Icons
         *
         * @role default inputs
         * === */
         /* ===
-        * WebRock Input Group
+        * FusionCORE Input Group
         *
         * @role default inputs
         * === */ }
@@ -952,7 +952,7 @@ a {
       -ms-transition: all 0.5s ease;
       transition: all 0.5s ease;
       /* ===
-       * WebRock Save Button
+       * FusionCORE Save Button
        *
        * @role display all WebRock objects to be added
        * === */ }
@@ -984,7 +984,7 @@ a {
         display: none; } }
 
 /* =============================================
- * WebRock Sandbox
+ * FusionCORE Sandbox
  *
  * @role main plugin object container
  * ============================================= */
@@ -1040,7 +1040,7 @@ a {
       position: relative; }
 
 /* =============================================
- * WebRock Object Actions
+ * FusionCORE Object Actions
  *
  * @role display inline object actions
  * ============================================= */
@@ -1101,7 +1101,7 @@ a {
         line-height: 25px; }
 
 /* =============================================
- * WebRock Preview
+ * FusionCORE Preview
  * ============================================= */
 #webrockPreview {
   width: 100%;
@@ -1131,7 +1131,7 @@ a {
   overflow: hidden; }
 
 /* =============================================
- * WebRock Overlay
+ * FusionCORE Overlay
  *
  * @role display an overlay with a login form or list
  * ============================================= */
@@ -1236,7 +1236,7 @@ body.webrock-loading {
   background: #2a282d; }
 
 /* =============================================
- * WebRock Loader
+ * FusionCORE Loader
  *
  * @role display an overlay with a loading spinner
  * ============================================= */
